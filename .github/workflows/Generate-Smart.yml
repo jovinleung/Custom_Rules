@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - Custom/config/Clash.ini
+      - Custom/config/Clash_Lite.ini
 
   workflow_dispatch:
 
@@ -21,6 +22,7 @@ jobs:
 
           FILES_TO_PROCESS=(
             "Custom/config/Clash.ini:Custom/config/Clash_Smart.ini"
+            "Custom/config/Clash_Lite.ini:Custom/config/Clash_Smart_Lite.ini"
           )
 
           git config user.name "github-actions[bot]"
