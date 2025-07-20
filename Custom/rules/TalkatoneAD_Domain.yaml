@@ -1,11 +1,14 @@
 # Generated from Custom/rules/TalkatoneAD.list
 # REPO: https://github.com/jovinleung/Rules
 # SOURCE: https://github.com/jovinleung/Rules/blob/main/Custom/rules/TalkatoneAD.list
-# TOTAL: 21
+# TOTAL: 27
 
 payload:
+  - '*googleads*'
+  - '+.adclick.g.doubleclick.net'
   - '+.ads.inmobi.com'
   - '+.adsappier.com'
+  - '+.adrta.com'
   - '+.amazon-adsystem.com'
   - '+.appier.net'
   - '+.appiersig.com'
@@ -14,7 +17,10 @@ payload:
   - '+.cdn2.inner-active.mobi'
   - '+.cr.adsappier.com'
   - '+.criteo.com'
+  - '+.d.tktn.be'
   - '+.googleads.g.doubleclick-cn.net'
+  - '+.googleads.g.doubleclick.net'
+  - '+.googleads4.g.doubleclick.net'
   - '+.gum.criteo.com'
   - '+.ow.pubmatic.com'
   - '+.pubmatic.com'
@@ -22,6 +28,6 @@ payload:
   - '+.sdk-events.inner-active.mobi'
   - '+.smaato.net'
   - '+.tappx.com'
+  - '+.telemetry.sdk.inmobi.cn'
+  - '+.tr-us.adsmoloco.com'
   - '+.wv.inner-active.mobi'
-  - '*googleads*'
-  - '+.googleads.g.doubleclick-cn.net'
