@@ -25,8 +25,8 @@ jobs:
           echo "proxy_ip=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml" >> $GITHUB_ENV
           echo "cn=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml" >> $GITHUB_ENV
           echo "cn_ip=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_IP.yaml" >> $GITHUB_ENV
-          echo "custom_direct=https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Direct.list" >> $GITHUB_ENV
-          echo "custom_proxy=https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Proxy.list" >> $GITHUB_ENV
+          echo "custom_direct=https://raw.githubusercontent.com/jovinleung/Rules/refs/heads/main/Custom/rules/Custom_Direct_Domain.yaml" >> $GITHUB_ENV
+          echo "custom_proxy=https://raw.githubusercontent.com/jovinleung/Rules/refs/heads/main/Custom/rules/Custom_Proxy_Domain.yaml" >> $GITHUB_ENV
         shell: bash
 
       - name: Checkout Repository
@@ -59,14 +59,8 @@ jobs:
           grep -v ' IP-CIDR6' | \
           grep -v 'PROCESS-NAME' | \
           sed "s/^\s*- \s*IP-CIDR,/ - '/;s/$/'/" >> proxyip.txt
-          curl -sSL ${custom_direct} | \
-          grep -v '#' | \
-          grep -v 'IP-CIDR' | \
-          sed "s/^\s*- /  - '/;s/$/'/" >> custom_direct.txt
-          curl -sSL ${custom_proxy} | \
-          grep -v '#' | \
-          grep -v 'IP-CIDR' | \
-          sed "s/^\s*- /  - '/;s/$/'/" >> custom_proxy.txt
+          curl -sSL ${custom_direct} | grep -v '#' >> custom_direct.txt
+          curl -sSL ${custom_proxy} | grep -v '#' >> custom_proxy.txt
 
       - name: Run MRS Script
         run: |
@@ -76,7 +70,7 @@ jobs:
       - name: Move Generated Files to Publish Directory
         run: |
           mkdir -p publish
-          mv *.mrs publish/
+          mv *.* publish/
 
       - name: Commit and Push MRS Files
         env:
