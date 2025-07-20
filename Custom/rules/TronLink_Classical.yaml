@@ -1,0 +1,11 @@
+# Generated from Custom/rules/TronLink.list
+# REPO: https://github.com/jovinleung/Rules
+# SOURCE: https://github.com/jovinleung/Rules/blob/main/Custom/rules/TronLink.list
+# TOTAL: 5
+
+payload:
+  - DOMAIN-SUFFIX,tronlink.org
+  - DOMAIN-SUFFIX,justswap.link
+  - IP-CIDR,3.136.94.196/32,no-resolve
+  - IP-CIDR,44.205.88.94/32,no-resolve
+  - IP-CIDR,18.206.50.220/32,no-resolve

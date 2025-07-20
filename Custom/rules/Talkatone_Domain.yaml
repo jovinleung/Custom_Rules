@@ -1,0 +1,16 @@
+# Generated from Custom/rules/Talkatone.list
+# REPO: https://github.com/jovinleung/Rules
+# SOURCE: https://github.com/jovinleung/Rules/blob/main/Custom/rules/Talkatone.list
+# TOTAL: 10
+
+payload:
+  - '+.mobilefuse.com'
+  - '+.inmobi.com'
+  - '+.crashlytics.com'
+  - '+.talkatone.com'
+  - '+.kochava.com'
+  - '+.tktn.be'
+  - '+.cohere.com'
+  - '+.ip-api.com'
+  - '+.agkn.com'
+  - '+.tktn.at'

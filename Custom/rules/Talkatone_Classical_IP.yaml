@@ -1,0 +1,10 @@
+# Generated from Custom/rules/Talkatone.list
+# REPO: https://github.com/jovinleung/Rules
+# SOURCE: https://github.com/jovinleung/Rules/blob/main/Custom/rules/Talkatone.list
+# TOTAL: 4
+
+payload:
+  - IP-CIDR,50.117.27.0/24,no-resolve
+  - IP-CIDR,69.46.75.0/24,no-resolve
+  - IP-CIDR,205.164.56.0/24,no-resolve
+  - IP-CIDR,63.251.124.0/24,no-resolve

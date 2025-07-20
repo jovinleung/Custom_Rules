@@ -1,0 +1,17 @@
+# Generated from Custom/rules/Custom_Direct.list
+# REPO: https://github.com/jovinleung/Rules
+# SOURCE: https://github.com/jovinleung/Rules/blob/main/Custom/rules/Custom_Direct.list
+# TOTAL: 10
+
+payload:
+  - DOMAIN-SUFFIX,localhost.ptlogin2.qq.com
+  - DOMAIN-SUFFIX,localhost.sec.qq.com
+  - DOMAIN-SUFFIX,wushuangai.com
+  - DOMAIN-SUFFIX,lcdn-locator.apple.com
+  - DOMAIN-SUFFIX,lcdn-registration.apple.com
+  - DOMAIN-SUFFIX,aihubmix.com
+  - DOMAIN-SUFFIX,www.ojrq.net
+  - DOMAIN-SUFFIX,knit.bid
+  - DOMAIN-SUFFIX,ddxq.mobi
+  - DOMAIN-SUFFIX,tastientech.com
+

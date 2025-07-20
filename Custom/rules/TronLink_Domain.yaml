@@ -1,0 +1,8 @@
+# Generated from Custom/rules/TronLink.list
+# REPO: https://github.com/jovinleung/Rules
+# SOURCE: https://github.com/jovinleung/Rules/blob/main/Custom/rules/TronLink.list
+# TOTAL: 2
+
+payload:
+  - '+.tronlink.org'
+  - '+.justswap.link'
