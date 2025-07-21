@@ -1,7 +1,9 @@
 # 规则名称: TalkatoneAD
-# 规则统计: 20
+# 规则统计: 27
 
 domain_suffix_set:
+  - adclick.g.doubleclick.net
+  - adrta.com
   - ads.inmobi.com
   - adsappier.com
   - amazon-adsystem.com
@@ -12,7 +14,10 @@ domain_suffix_set:
   - cdn2.inner-active.mobi
   - cr.adsappier.com
   - criteo.com
+  - d.tktn.be
   - googleads.g.doubleclick-cn.net
+  - googleads.g.doubleclick.net
+  - googleads4.g.doubleclick.net
   - gum.criteo.com
   - ow.pubmatic.com
   - pubmatic.com
@@ -20,6 +25,8 @@ domain_suffix_set:
   - sdk-events.inner-active.mobi
   - smaato.net
   - tappx.com
+  - telemetry.sdk.inmobi.cn
+  - tr-us.adsmoloco.com
   - wv.inner-active.mobi
 domain_keyword_set:
   - googleads
