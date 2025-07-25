@@ -29,17 +29,13 @@ jobs:
           echo "custom_proxy=https://raw.githubusercontent.com/jovinleung/Rules/refs/heads/main/Custom/rules/Custom_Proxy_Domain.yaml" >> $GITHUB_ENV
         shell: bash
 
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@main
 
       - name: Download and install Mihomo
         run: |
-          curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases \
-            | grep "browser_download_url.*mihomo-linux-amd64-alpha.*.deb" \
-            | head -n 1 \
-            | cut -d '"' -f 4 \
-            | xargs wget -q -O mihomo-linux-amd64-alpha.deb
-          sudo apt install --fix-missing ./mihomo-linux-amd64-alpha.deb
+          wget -q --no-check-certificate https://github.com/MetaCubeX/mihomo/releases/download/v1.19.11/mihomo-linux-amd64-v1.19.11.deb
+          sudo dpkg -i mihomo-linux-amd64-v1.19.11.deb
         shell: bash
 
       - name: Generate Rule Files
