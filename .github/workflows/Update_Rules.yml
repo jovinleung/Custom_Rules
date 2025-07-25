@@ -115,7 +115,7 @@ jobs:
             # Download Additional Rules
             files=(
                 # Apple Services
-                "APNs.list https://kelee.one/Tool/Loon/Lsr/ApplePushNotificationService.lsr"
+                "APNs.list https://rule.kelee.one/Loon/ApplePushNotificationService.lsr"
                 "Apple.list https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
                 "AppleProxyService.list https://raw.githubusercontent.com/Coldvvater/Mononoke/master/Surge/Custom/AppleProxyService.list"
                 "AppleMusic.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
@@ -142,7 +142,7 @@ jobs:
                 # Oracle
                 "Oracle.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Oracle/Oracle.list"
                 # Streaming Media
-                "TikTok.list https://kelee.one/Tool/Loon/Lsr/TikTok.lsr"
+                "TikTok.list https://rule.kelee.one/Loon/TikTok.lsr"
                 "Netflix.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list"
                 "HBO.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
                 "Disney.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
@@ -162,8 +162,8 @@ jobs:
                 "Epic.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
                 "Game.list https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list"
                 # Download CDNs
-                "DownloadCDN_Global.list https://kelee.one/Tool/Loon/Lsr/InternationalDownloadCDN.lsr"
-                "DownloadCDN_CN.list https://kelee.one/Tool/Loon/Lsr/ChinaDownloadCDN.lsr"
+                "DownloadCDN_Global.list https://rule.kelee.one/Loon/InternationalDownloadCDN.lsr"
+                "DownloadCDN_CN.list https://rule.kelee.one/Loon/ChinaDownloadCDN.lsr"
                 # Domestic Services
                 "NetEaseMusic.list https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/NeteaseMusic.list"
                 "Bilibili.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
