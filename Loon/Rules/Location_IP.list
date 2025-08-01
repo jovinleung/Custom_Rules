@@ -1,0 +1,8 @@
+# 规则名称: Location_IP
+# 规则统计: 5
+
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,apissl.ksapisrv.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,edith.xiaohongshu.com
+DOMAIN-SUFFIX,gifshow.com
