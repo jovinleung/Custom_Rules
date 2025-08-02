@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1100
+# 规则统计: 1101
 
 HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,Proxy
 HOST,ccmdl.adobe.com,Proxy
@@ -616,6 +616,7 @@ HOST-SUFFIX,moe,Proxy
 HOST-SUFFIX,mojang.com,Proxy
 HOST-SUFFIX,monica.im,Proxy
 HOST-SUFFIX,moomoo.com,Proxy
+HOST-SUFFIX,mooo.com,Proxy
 HOST-SUFFIX,motherless.com,Proxy
 HOST-SUFFIX,moviefap.com,Proxy
 HOST-SUFFIX,mozilla.com,Proxy
